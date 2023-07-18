@@ -1,7 +1,23 @@
+using StartUp;
+using StartUp.Driven;
+
+var config = await CustomConfigurationBuilder.Build();
+
 var builder = WebApplication.CreateBuilder(args);
+
+#region service configuration
+
+builder.Services.AddEwwwDbServices(config);
+
+#endregion
+
 var app = builder.Build();
 
+#region app configuration
+
 app.MapGet("/", () => "Hello World!");
+
+#endregion
 
 app.Run();
 

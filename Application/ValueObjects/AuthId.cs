@@ -12,6 +12,6 @@ public record AuthId
         Value = value;
     }
 
-    public static explicit operator AuthId(string authIdStr)
-        => new AuthId(authIdStr);
+    public static explicit operator string(AuthId authId)
+        => authId.Value;
 };

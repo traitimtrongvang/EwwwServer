@@ -1,8 +1,10 @@
-﻿namespace StartUp;
+﻿using EwwwDb.Settings;
+
+namespace StartUp;
 
 public static class CustomConfigurationBuilder
 {
-    public static async Task<IConfiguration> Build()
+    public static async Task<IConfiguration> BuildCustomConfiguration(this IServiceCollection services)
     {
         #region decide environment
 
@@ -24,6 +26,13 @@ public static class CustomConfigurationBuilder
         var config = configBuilder.Build();
 
         // TODO implement your code here
+
+        #region implement settings
+
+        services.Configure<EwwwDbSetting>(
+            options => config.GetSection(nameof(EwwwDbSetting)).Bind(options));
+
+        #endregion
         
         return config;
     }

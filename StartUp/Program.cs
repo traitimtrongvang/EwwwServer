@@ -1,9 +1,9 @@
 using StartUp;
 using StartUp.Driven;
 
-var config = await CustomConfigurationBuilder.Build();
-
 var builder = WebApplication.CreateBuilder(args);
+
+var config = await builder.Services.BuildCustomConfiguration();
 
 #region service configuration
 

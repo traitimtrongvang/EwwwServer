@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartUp", "StartUp\StartUp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EwwwDb", "Driven\EwwwDb\EwwwDb.csproj", "{168D0525-9D8B-4136-A330-EFFC2D681B30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth0", "Driven\Auth0\Auth0.csproj", "{15AEB440-B6CE-4094-BBB0-23379387DE2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,8 +30,13 @@ Global
 		{168D0525-9D8B-4136-A330-EFFC2D681B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{168D0525-9D8B-4136-A330-EFFC2D681B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{168D0525-9D8B-4136-A330-EFFC2D681B30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15AEB440-B6CE-4094-BBB0-23379387DE2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15AEB440-B6CE-4094-BBB0-23379387DE2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15AEB440-B6CE-4094-BBB0-23379387DE2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15AEB440-B6CE-4094-BBB0-23379387DE2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{168D0525-9D8B-4136-A330-EFFC2D681B30} = {2FF8117A-D459-49E6-A239-EB2150E802C6}
+		{15AEB440-B6CE-4094-BBB0-23379387DE2A} = {2FF8117A-D459-49E6-A239-EB2150E802C6}
 	EndGlobalSection
 EndGlobal

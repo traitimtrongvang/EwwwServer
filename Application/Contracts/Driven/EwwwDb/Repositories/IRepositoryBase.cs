@@ -2,7 +2,8 @@
 
 namespace Application.Contracts.Driven.EwwwDb.Repositories;
 
-public interface IRepositoryBase<in T> where T : EntityBase
+public interface IRepositoryBase<T> where T : EntityBase
 {
     Task InsertAsync(T entity);
+    Task<T?> FindOneByIdAsync(Guid id);
 }

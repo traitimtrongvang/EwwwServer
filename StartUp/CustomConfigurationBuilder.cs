@@ -1,10 +1,11 @@
-﻿using EwwwDb.Settings;
+﻿using Auth0.Settings;
+using EwwwDb.Settings;
 
 namespace StartUp;
 
 public static class CustomConfigurationBuilder
 {
-    public static async Task<IConfiguration> BuildCustomConfiguration(this IServiceCollection services)
+    public static IConfiguration BuildCustomConfiguration(this IServiceCollection services)
     {
         #region decide environment
 
@@ -24,8 +25,6 @@ public static class CustomConfigurationBuilder
             .AddJsonFile(configFilePath, optional: true, reloadOnChange: true);
         
         var config = configBuilder.Build();
-
-        // TODO implement your code here
 
         #region implement settings
 

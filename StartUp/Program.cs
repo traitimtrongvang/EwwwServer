@@ -3,7 +3,7 @@ using StartUp.Driven;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var config = await builder.Services.BuildCustomConfiguration();
+var config = builder.Services.BuildCustomConfiguration();
 
 #region service configuration
 

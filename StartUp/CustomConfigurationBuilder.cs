@@ -31,6 +31,13 @@ public static class CustomConfigurationBuilder
         services.Configure<EwwwDbSetting>(
             options => config.GetSection(nameof(EwwwDbSetting)).Bind(options));
 
+        services.Configure<Auth0Setting>(
+            option =>
+            {
+                config.GetSection(nameof(Auth0Setting)).Bind(option);
+                option.FetchIssuerSigningKeysStrAsync().RunSynchronously();
+            });
+        
         #endregion
         
         return config;

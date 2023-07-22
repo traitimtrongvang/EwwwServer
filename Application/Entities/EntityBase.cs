@@ -6,5 +6,5 @@ public abstract class EntityBase
 
     public DateTime CreatedAt { get; init; } = DateTime.Now;
 
-    public DateTime UpdatedAt { get; set; }
+    public DateTime? UpdatedAt { get; set; }
 }

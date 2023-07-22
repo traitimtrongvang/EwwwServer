@@ -10,12 +10,14 @@ public abstract class EntityBaseConfig<T> : IEntityTypeConfiguration<T> where T 
     {
         builder
             .HasKey(e => e.Id);
-        
-        // builder
-        //     .Property(e => e.CreatedAt)
-        
+
+        builder
+            .Property(e => e.CreatedAt)
+            .HasColumnType("timestamp");
+
         builder
             .Property(e => e.UpdatedAt)
-            .ValueGeneratedOnAddOrUpdate();
+            .HasColumnType("timestamp")
+            .IsRequired(false);
     }
 }

@@ -26,7 +26,7 @@ public class Auth0Driven : IAuth0Driven
                 Id = jwtToken.Payload.Sub
             };
         }
-        catch (InvalidTokenExc e)
+        catch (InvalidTokenExc)
         {
             throw new UnauthorizedExc();
         }

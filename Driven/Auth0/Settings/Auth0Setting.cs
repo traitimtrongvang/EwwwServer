@@ -6,7 +6,7 @@ public class Auth0Setting
     public required string PublicKeyUri { get; init; }
     public required string Issuer { get; init; }
     public required List<string> Audiences { get; init; }
-    public string IssuerSigningKeysStr { get; private set; } = null!;
+    public string IssuerSigningKeysStr { get; set; } = null!;
     
     private readonly HttpClient _httpClient;
 

@@ -2,6 +2,7 @@
 using Application.Contracts.Driven.EwwwDb;
 using Application.Contracts.Driven.EwwwDb.Repositories;
 using Application.Services;
+using Application.UseCases;
 using Auth0;
 using EwwwDb;
 using EwwwDb.Repositories;
@@ -30,6 +31,12 @@ public static class ApplicationServiceConfig
         #region services
 
         services.AddScoped<IUserService, UserService>();
+
+        #endregion
+
+        #region usecases
+
+        services.AddScoped<IRegisterNewUser, RegisterNewUser>();
 
         #endregion
     }

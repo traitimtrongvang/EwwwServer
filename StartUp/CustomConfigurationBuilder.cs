@@ -5,7 +5,7 @@ namespace StartUp;
 
 public static class CustomConfigurationBuilder
 {
-    public static IConfiguration BuildCustomConfiguration(this IServiceCollection services)
+    public static async Task<IConfiguration> BuildCustomConfigurationAsync(this IServiceCollection services)
     {
         #region decide environment
 
@@ -31,15 +31,23 @@ public static class CustomConfigurationBuilder
         services.Configure<EwwwDbSetting>(
             options => config.GetSection(nameof(EwwwDbSetting)).Bind(options));
 
-        services.Configure<Auth0Setting>(
-            option =>
-            {
-                config.GetSection(nameof(Auth0Setting)).Bind(option);
-                option.FetchIssuerSigningKeysStrAsync().RunSynchronously();
-            });
+        await services.ConfigureAuth0SettingAsync(config);
         
         #endregion
         
         return config;
+    }
+
+    private static async Task ConfigureAuth0SettingAsync(this IServiceCollection services, IConfiguration config)
+    {
+        var auth0Settings = config.GetSection(nameof(Auth0Setting)).Get<Auth0Setting>()!;
+        await auth0Settings.FetchIssuerSigningKeysStrAsync();
+
+        services.Configure<Auth0Setting>(
+            options =>
+            {
+                config.GetSection(nameof(Auth0Setting)).Bind(options);
+                options.IssuerSigningKeysStr = auth0Settings.IssuerSigningKeysStr;
+            });
     }
 }

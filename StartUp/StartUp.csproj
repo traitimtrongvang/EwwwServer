@@ -17,9 +17,11 @@
       <ProjectReference Include="..\Application\Application.csproj" />
       <ProjectReference Include="..\Driven\Auth0\Auth0.csproj" />
       <ProjectReference Include="..\Driven\EwwwDb\EwwwDb.csproj" />
+      <ProjectReference Include="..\Driving\EwwwApi\EwwwApi.csproj" />
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.8" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.4">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

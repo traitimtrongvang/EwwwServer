@@ -1,6 +1,6 @@
 ﻿using Application.Entities;
 
-namespace Application.Contracts.Driven.EwwwDb.Repositories;
+namespace Application.Contracts.Driven.Database.Repositories;
 
 public interface IRepositoryBase<T> where T : EntityBase
 {

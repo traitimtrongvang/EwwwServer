@@ -1,4 +1,4 @@
-﻿namespace Application.Contracts.Driven.EwwwDb;
+﻿namespace Application.Contracts.Driven.Database;
 
 public interface IEwwwDbCtx
 {

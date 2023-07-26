@@ -1,4 +1,4 @@
-﻿using Application.Contracts.Driven.EwwwDb;
+﻿using Application.Contracts.Driven.Database;
 using Application.Entities;
 using Microsoft.EntityFrameworkCore;
 

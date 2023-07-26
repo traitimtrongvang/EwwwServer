@@ -1,6 +1,6 @@
 ﻿using Application.Contracts.Driven.Auth0;
-using Application.Contracts.Driven.EwwwDb;
-using Application.Contracts.Driven.EwwwDb.Repositories;
+using Application.Contracts.Driven.Database;
+using Application.Contracts.Driven.Database.Repositories;
 using Application.Contracts.Driving.Api.Dtos;
 using Application.Services;
 using Application.ValueObjects;

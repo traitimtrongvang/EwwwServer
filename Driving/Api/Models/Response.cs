@@ -1,6 +1,6 @@
-﻿using EwwwApi.Constants;
+﻿using Api.Constants;
 
-namespace EwwwApi.Models;
+namespace Api.Models;
 
 public record Response
 {

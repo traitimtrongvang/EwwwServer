@@ -17,7 +17,7 @@
       <ProjectReference Include="..\Application\Application.csproj" />
       <ProjectReference Include="..\Driven\Auth0\Auth0.csproj" />
       <ProjectReference Include="..\Driven\EwwwDb\EwwwDb.csproj" />
-      <ProjectReference Include="..\Driving\EwwwApi\EwwwApi.csproj" />
+      <ProjectReference Include="..\Driving\Api\Api.csproj" />
     </ItemGroup>
 
     <ItemGroup>

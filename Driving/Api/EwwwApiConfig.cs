@@ -1,8 +1,8 @@
-﻿using EwwwApi.Middlewares;
+﻿using Api.Middlewares;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Hosting;
 
-namespace EwwwApi;
+namespace Api;
 
 public static class EwwwApiConfig
 {

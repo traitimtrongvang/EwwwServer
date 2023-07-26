@@ -1,11 +1,11 @@
 ﻿using System.Net;
 using System.Text.Json;
+using Api.Constants;
+using Api.Models;
 using Application.Contracts.Driven.Auth0.Exceptions;
-using EwwwApi.Constants;
-using EwwwApi.Models;
 using Microsoft.AspNetCore.Http;
 
-namespace EwwwApi.Middlewares;
+namespace Api.Middlewares;
 
 public class HandleGlobalErrorMiddleware
 {

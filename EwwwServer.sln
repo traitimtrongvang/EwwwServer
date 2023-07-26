@@ -12,7 +12,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EwwwDb", "Driven\EwwwDb\Eww
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth0", "Driven\Auth0\Auth0.csproj", "{15AEB440-B6CE-4094-BBB0-23379387DE2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EwwwApi", "Driving\EwwwApi\EwwwApi.csproj", "{4FFF0C15-FDEB-4E05-ADD4-12D4922CE827}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Driving\Api\Api.csproj", "{4FFF0C15-FDEB-4E05-ADD4-12D4922CE827}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,11 +1,11 @@
-﻿using Application.Contracts.Driving.Api.Dtos;
+﻿using Api.Constants;
+using Api.Models;
+using Application.Contracts.Driving.Api.Dtos;
 using Application.Exceptions;
 using Application.UseCases;
-using EwwwApi.Constants;
-using EwwwApi.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EwwwApi.Controllers;
+namespace Api.Controllers;
 
 public interface IUsersController
 {

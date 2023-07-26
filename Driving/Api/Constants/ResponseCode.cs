@@ -1,4 +1,4 @@
-﻿namespace EwwwApi.Constants;
+﻿namespace Api.Constants;
 
 public enum ResponseCode
 {

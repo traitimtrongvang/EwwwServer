@@ -2,7 +2,7 @@
 using Application.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace EwwwDb.Repositories;
+namespace Database.Repositories;
 
 public abstract class BaseRepository<T> : IRepositoryBase<T> where T : EntityBase
 {

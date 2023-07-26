@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace EwwwDb.Migrations
+namespace Database.Migrations
 {
     /// <inheritdoc />
     public partial class Update_CreatedAt_And_UpdatedAt : Migration

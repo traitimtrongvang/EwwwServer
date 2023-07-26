@@ -2,7 +2,7 @@
 using Application.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace EwwwDb;
+namespace Database;
 
 public class EwwwDbCtx : DbContext, IEwwwDbCtx
 {

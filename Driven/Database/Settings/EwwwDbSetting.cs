@@ -1,4 +1,4 @@
-﻿namespace EwwwDb.Settings;
+﻿namespace Database.Settings;
 
 public class EwwwDbSetting
 {

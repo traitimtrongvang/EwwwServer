@@ -4,8 +4,8 @@ using Application.Contracts.Driven.EwwwDb.Repositories;
 using Application.Services;
 using Application.UseCases;
 using Auth0;
-using EwwwDb;
-using EwwwDb.Repositories;
+using Database;
+using Database.Repositories;
 
 namespace StartUp;
 

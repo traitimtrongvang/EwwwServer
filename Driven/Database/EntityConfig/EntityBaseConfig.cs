@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace EwwwDb.EntityConfig;
+namespace Database.EntityConfig;
 
 public abstract class EntityBaseConfig<T> : IEntityTypeConfiguration<T> where T : EntityBase
 {

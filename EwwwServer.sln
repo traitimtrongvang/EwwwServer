@@ -8,7 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartUp", "StartUp\StartUp.csproj", "{B04E4983-1EEB-45F8-BC3B-AD83673011C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EwwwDb", "Driven\EwwwDb\EwwwDb.csproj", "{168D0525-9D8B-4136-A330-EFFC2D681B30}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Driven\Database\Database.csproj", "{168D0525-9D8B-4136-A330-EFFC2D681B30}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth0", "Driven\Auth0\Auth0.csproj", "{15AEB440-B6CE-4094-BBB0-23379387DE2A}"
 EndProject

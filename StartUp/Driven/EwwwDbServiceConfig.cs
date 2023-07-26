@@ -1,5 +1,5 @@
-﻿using EwwwDb;
-using EwwwDb.Settings;
+﻿using Database;
+using Database.Settings;
 using Microsoft.EntityFrameworkCore;
 
 namespace StartUp.Driven;

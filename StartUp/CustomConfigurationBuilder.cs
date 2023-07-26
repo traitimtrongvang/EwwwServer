@@ -1,5 +1,5 @@
 ﻿using Auth0.Settings;
-using EwwwDb.Settings;
+using Database.Settings;
 
 namespace StartUp;
 

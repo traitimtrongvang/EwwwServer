@@ -3,7 +3,7 @@ using Application.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace EwwwDb.EntityConfig;
+namespace Database.EntityConfig;
 
 public class UserConfig : EntityBaseConfig<User>
 {

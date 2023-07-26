@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace EwwwDb.Migrations
+namespace Database.Migrations
 {
     /// <inheritdoc />
     public partial class Create_User_Table : Migration

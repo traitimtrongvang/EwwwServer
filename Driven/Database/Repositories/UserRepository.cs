@@ -3,7 +3,7 @@ using Application.Entities;
 using Application.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 
-namespace EwwwDb.Repositories;
+namespace Database.Repositories;
 
 public class UserRepository : BaseRepository<User>, IUserRepository
 {

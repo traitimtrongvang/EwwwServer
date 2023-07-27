@@ -37,6 +37,7 @@ public static class ApplicationServiceConfig
         #region usecases
 
         services.AddScoped<IRegisterNewUser, RegisterNewUser>();
+        services.AddScoped<ISendMessage, SendMessage>();
 
         #endregion
     }
